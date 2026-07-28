@@ -1,6 +1,9 @@
 {
-  "name": "mcp-server-hub",
+  "name": "@kbncodes/mcp-server-hub",
   "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Production-ready MCP Server Hub — host multiple Model Context Protocol servers behind one authenticated gateway. Stateless Streamable HTTP, 2026-07-28 spec-ready.",
   "type": "module",
   "main": "dist/index.js",

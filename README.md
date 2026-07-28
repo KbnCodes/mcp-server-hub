@@ -12,7 +12,7 @@ Built for the **2026-07-28 MCP spec revision**: no sessions, no sticky routing, 
 
 ```bash
 # ...or try it on your machine in one command (auto-generates a dev token):
-npx mcp-server-hub --dev
+npx @kbncodes/mcp-server-hub --dev
 ```
 
 ---
@@ -63,13 +63,13 @@ That's it. Optionally:
 Want to try it on your machine first? The hub is published to npm — no clone, no build:
 
 ```bash
-npx mcp-server-hub --dev
+npx @kbncodes/mcp-server-hub --dev
 ```
 
 `--dev` (or any interactive terminal) auto-generates an ephemeral `AUTH_TOKEN`, prints it, and serves the dashboard at http://localhost:8080/. For a stable token, set it yourself:
 
 ```bash
-AUTH_TOKEN=$(openssl rand -hex 32) npx mcp-server-hub
+AUTH_TOKEN=$(openssl rand -hex 32) npx @kbncodes/mcp-server-hub
 ```
 
 > The published binary stays **production-safe**: in a non-interactive environment (containers, CI) it still fails closed and refuses to start without `AUTH_TOKEN` unless you set `ALLOW_NO_AUTH=true`.
