@@ -1,0 +1,33 @@
+# Render blueprint — one-click deploy of the MCP Server Hub.
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: mcp-server-hub
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      # Render auto-generates a strong value on first deploy.
+      - key: AUTH_TOKEN
+        generateValue: true
+      # Which servers to enable: comma-separated ids or "all".
+      - key: ENABLED_SERVERS
+        value: all
+      # Prompted at deploy time — set to your Render URL, e.g.
+      # https://mcp-server-hub.onrender.com
+      - key: PUBLIC_URL
+        sync: false
+      # Optional: paste a GitHub PAT to enable the github server.
+      - key: GITHUB_TOKEN
+        sync: false
+      # Optional: a Postgres connection string enables the read-only postgres server.
+      - key: DATABASE_URL
+        sync: false
+
+# To persist the memory server across restarts, add a disk and set
+# MEMORY_FILE=/data/memory.json (Render disks are a paid add-on):
+#
+#     disk:
+#       name: hub-data
+#       mountPath: /data
+#       sizeGB: 1

@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output (published to npm via the "files" allowlist, not committed)
+dist/
+
+# Environment / secrets — never commit real tokens
+.env
+.env.*
+!.env.example
+
+# npm pack / publish artifacts
+*.tgz
+
+# Local memory-server persistence
+data/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
