@@ -18,7 +18,7 @@ Built for the **2026-07-28 MCP spec revision**: no sessions, no sticky routing, 
 
 **Deploy it, or run it locally:**
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template) &nbsp; [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/KbnCodes/mcp-server-hub)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/mcp-server-hub?referralCode=BN-kl5&utm_medium=integration&utm_source=template&utm_campaign=generic) &nbsp; [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/KbnCodes/mcp-server-hub)
 
 ```bash
 # ...or try it on your machine in one command (auto-generates a dev token):
@@ -55,6 +55,8 @@ Plus:
 - **`/.well-known/oauth-protected-resource`** — RFC 9728 Protected Resource Metadata
 
 ## Deploy on Railway
+
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/mcp-server-hub?referralCode=BN-kl5&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 1. Click **Deploy** on the template page (or deploy this repo).
 2. Railway auto-generates a strong `AUTH_TOKEN` for you.
