@@ -1,8 +1,16 @@
-# MCP Server Hub
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/KbnCodes/mcp-server-hub@main/assets/logo.svg" alt="MCP Server Hub logo" width="140" height="140" />
+</p>
 
-**Host multiple Model Context Protocol servers behind one authenticated gateway — in one click.**
+<h1 align="center">MCP Server Hub</h1>
+
+<p align="center"><strong>Host multiple Model Context Protocol servers behind one authenticated gateway — in one click.</strong></p>
+
+<p align="center">
 
 [![npm version](https://img.shields.io/npm/v/@kbncodes/mcp-server-hub?logo=npm)](https://www.npmjs.com/package/@kbncodes/mcp-server-hub) [![npm downloads](https://img.shields.io/npm/dm/@kbncodes/mcp-server-hub?logo=npm)](https://www.npmjs.com/package/@kbncodes/mcp-server-hub) [![license](https://img.shields.io/npm/l/@kbncodes/mcp-server-hub)](https://github.com/KbnCodes/mcp-server-hub/blob/main/README.md) [![Node](https://img.shields.io/node/v/@kbncodes/mcp-server-hub)](https://nodejs.org)
+
+</p>
 
 A production-ready, stateless [Streamable HTTP](https://modelcontextprotocol.io/specification) hub that gives your AI agents (Claude, Cursor, LibreChat, custom clients) instant access to web fetching, shared memory, GitHub, Postgres and utility tools — all from a single Railway service with a single Bearer token.
 
