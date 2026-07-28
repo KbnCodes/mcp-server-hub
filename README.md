@@ -178,6 +178,21 @@ npm run dev            # hot-reload dev server
 npm run build && npm start
 ```
 
+## Releasing
+
+Publishing to npm is fully automated via [GitHub Actions OIDC trusted publishing](.github/workflows/publish.yml) — no tokens, secrets, 2FA prompts or passkeys required. The workflow authenticates to npm using GitHub's OIDC identity and attaches build [provenance](https://docs.npmjs.com/generating-provenance-statements).
+
+To cut a release:
+
+```bash
+npm version patch   # or: minor / major — bumps package.json + creates a git tag
+git push --follow-tags
+```
+
+Then, on GitHub, **Releases → Draft a new release**, pick the tag you just pushed, and **Publish release**. That fires the `Publish to npm` workflow, which builds and publishes the new version automatically. (You can also trigger it manually from the **Actions** tab via **Run workflow**.)
+
+> One-time setup: the package must have this repo registered as a **Trusted Publisher** on npm (package **Settings → Trusted Publisher → GitHub Actions**, workflow file `publish.yml`).
+
 ## Architecture
 
 ```
