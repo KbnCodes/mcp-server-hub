@@ -68,8 +68,6 @@ That's it. Optionally:
 - Attach a **Postgres database** and set `DATABASE_URL=${{Postgres.DATABASE_URL}}` to enable read-only SQL.
 - Mount a **volume** at `/data` and set `MEMORY_FILE=/data/memory.json` to persist agent memory.
 
-> Railway is the recommended home for this template: it lists in the marketplace for discovery and pays template authors via the **25% Template Kickback Program**.
-
 ## Run locally with `npx`
 
 Want to try it on your machine first? The hub is published to npm — no clone, no build:
@@ -107,7 +105,7 @@ After the first deploy, set `PUBLIC_URL` to your Render URL (e.g. `https://mcp-s
 2. Set `AUTH_TOKEN` (plus any optional `GITHUB_TOKEN` / `DATABASE_URL`) in the Manufact environment settings.
 3. Set `PUBLIC_URL` to the assigned Manufact URL.
 
-> **Note:** Manufact is **usage-based hosting that you pay for** — it does **not** offer template revenue sharing. Use it for *reach* (ChatGPT/Claude/Gemini distribution); use **Railway's 25% Template Kickback** for *earnings*.
+> **Note:** Manufact is usage-based paid hosting. Use it when you want distribution to the ChatGPT Apps Store, Claude Connectors, and Gemini.
 
 ## Connect a client
 
